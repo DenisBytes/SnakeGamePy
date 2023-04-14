@@ -12,7 +12,7 @@ check_errors = pygame.init()
 if (check_errors[1] > 0):
     print("Error " + check_errors[1])
 else:
-    print("Game Succesfully initialized")
+    print("Game Successfully initialized")
 
 # initialise game window
 
@@ -27,6 +27,7 @@ green = pygame.Color(0, 255, 0)
 blue = pygame.Color(0, 0, 255)
 
 fps_controller = pygame.time.Clock()
+
 # one snake square size
 square_size = 30
 
@@ -120,7 +121,7 @@ while True:
     pygame.draw.rect(game_window, red, pygame.Rect(food_pos[0],
                                                    food_pos[1], square_size, square_size))
 
-    # game over condiditons
+    # game over conditions
 
     for block in snake_body[1:]:
         if head_pos[0] == block[0] and head_pos[1] == block[1]:
